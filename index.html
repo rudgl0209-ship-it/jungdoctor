@@ -6,189 +6,213 @@
 <title>허진성 지점장 | 보험명의 정닥터</title>
 <meta name="description" content="보험명의 정닥터 허진성 지점장. 가지고 계신 보험부터 펼쳐 보는 보험 상담. 생명·손해·변액보험 취급.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://rudgl0209-ship-it.github.io/jungdoctor/">
 <meta property="og:title" content="보험, 펼쳐 보면 보입니다 | 허진성 지점장">
 <meta property="og:description" content="보험명의 정닥터 허진성 지점장 보험 상담 신청 010-6366-2889">
-<meta property="og:image" content="images/portrait.jpg">
+<meta property="og:image" content="https://rudgl0209-ship-it.github.io/jungdoctor/images/portrait.jpg">
+<meta name="theme-color" content="#174a3d">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Gowun+Batang:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
 :root{
-  --night:#16302a; --pine:#1f3f37; --pine2:#2e5a4e; --sage:#edf3f0; --line:#cfdcd6;
-  --gold:#c9a457; --gold2:#e6cf94; --ink:#14201c; --soft:#56655f; --white:#fff; --alert:#a8322a;
+  --green:#174a3d;      /* 증권 표지 초록 */
+  --green-2:#2b6b58;
+  --ink:#16241f;        /* 본문 글자 */
+  --muted:#56665f;
+  --desk:#e8edeb;       /* 종이가 놓인 책상 */
+  --paper:#ffffff;
+  --rule:#c7d2cd;
+  --seal:#c23a2b;       /* 도장 */
   --col:1120px;
+  --serif:'Noto Serif KR','Nanum Myeongjo',serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:76px}
-body{font-family:'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-size:18px;line-height:1.75;color:var(--ink);background:var(--white);word-break:keep-all}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-size:18px;line-height:1.75;color:var(--ink);background:var(--paper);word-break:keep-all;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%}
 a{color:inherit}
-:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+:focus-visible{outline:3px solid var(--seal);outline-offset:3px}
 .col{max-width:var(--col);margin:0 auto;padding:0 24px}
-section{padding:96px 0}
-h2.sec{font-size:clamp(30px,4.2vw,46px);font-weight:900;line-height:1.25;letter-spacing:-.02em;color:var(--pine)}
-.lede{color:var(--soft);font-size:19px;max-width:32em;margin-top:12px}
+section{padding:104px 0}
+h2.sec{font-family:var(--serif);font-weight:900;font-size:clamp(30px,4vw,44px);line-height:1.3;letter-spacing:-.02em;color:var(--green)}
+.lede{color:var(--muted);font-size:19px;max-width:31em;margin-top:14px}
 
-.draft{background:var(--alert);color:#fff;text-align:center;font-size:15px;font-weight:700;padding:9px 16px}
+.draft{background:var(--seal);color:#fff;text-align:center;font-size:15px;font-weight:700;padding:9px 16px}
 
 /* 머리 */
-.top{position:sticky;top:0;z-index:30;background:rgba(22,48,42,.96);backdrop-filter:blur(8px);color:#fff;border-bottom:1px solid rgba(201,164,87,.35)}
-.top .col{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
-.brand b{font-family:'Gowun Batang',serif;font-size:21px}
-.top nav{display:flex;gap:2px}
-.top nav a{font-size:15px;text-decoration:none;padding:8px 12px;border-radius:999px;opacity:.85}
-.top nav a:hover{background:rgba(255,255,255,.1);opacity:1}
-.top .call{font-weight:700;text-decoration:none;background:var(--gold);color:var(--night);padding:9px 18px;border-radius:999px;white-space:nowrap}
+.top{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.top .col{display:flex;align-items:center;justify-content:space-between;gap:16px;height:66px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--green)}
+.brand b{font-family:var(--serif);font-weight:900;font-size:21px;letter-spacing:-.01em}
+.top nav{display:flex;gap:4px}
+.top nav a{font-size:16px;text-decoration:none;padding:8px 12px;color:var(--muted);border-radius:4px}
+.top nav a:hover{color:var(--green);background:var(--desk)}
+.top .call{font-weight:700;text-decoration:none;background:var(--green);color:#fff;padding:10px 18px;border-radius:4px;white-space:nowrap}
+.top .call:hover{background:var(--green-2)}
 
-/* 첫 화면 */
-.hero{background:var(--night);color:#fff;position:relative;overflow:hidden;padding:72px 0 0}
-.hero:before{content:"";position:absolute;right:-180px;top:-160px;width:620px;height:620px;border-radius:50%;border:1px solid rgba(201,164,87,.25);box-shadow:0 0 0 60px rgba(201,164,87,.04),0 0 0 140px rgba(201,164,87,.03)}
-.hero .col{position:relative;display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
-.hero .tag{display:inline-flex;align-items:center;gap:8px;font-size:15px;color:var(--gold2);border:1px solid rgba(230,207,148,.4);padding:6px 14px;border-radius:999px}
-.hero h1{font-size:clamp(46px,7.6vw,92px);font-weight:900;line-height:1.08;letter-spacing:-.035em;margin:22px 0 26px}
-.hero p.sub{font-size:20px;opacity:.88;max-width:25em}
-.acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
-.btn{display:inline-flex;align-items:center;gap:10px;font:inherit;font-size:18px;font-weight:700;padding:17px 28px;border-radius:999px;border:2px solid var(--gold);background:var(--gold);color:var(--night);text-decoration:none;cursor:pointer}
-.btn:hover{background:var(--gold2);border-color:var(--gold2)}
-.btn.line{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
-.btn.line:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+/* 버튼 */
+.btn{display:inline-flex;align-items:center;gap:10px;font:inherit;font-size:18px;font-weight:700;padding:16px 26px;border-radius:4px;border:2px solid var(--green);background:var(--green);color:#fff;text-decoration:none;cursor:pointer}
+.btn:hover{background:var(--green-2);border-color:var(--green-2)}
+.btn.line{background:transparent;color:var(--green)}
+.btn.line:hover{background:var(--desk)}
 .btn svg{flex:none}
 
-/* 액자 */
-.frame{position:relative;justify-self:center;width:min(100%,380px);padding:14px;background:linear-gradient(145deg,#e8d39d,#b38b3e 45%,#e3c983 70%,#9d7631);border-radius:6px;box-shadow:0 30px 60px rgba(0,0,0,.45)}
-.frame .inner{background:#f7f4ec;padding:16px 16px 0;border-radius:2px}
-.frame img{width:100%;height:auto;aspect-ratio:600/619;object-fit:cover}
-.frame .plate{text-align:center;padding:14px 4px 16px}
-.frame .plate b{display:block;font-family:'Gowun Batang',serif;font-size:28px;color:var(--night);letter-spacing:.2em;padding-left:.2em}
-.frame .plate span{font-size:15px;color:var(--soft)}
+/* 첫 화면: 펼쳐 놓은 증권 */
+.hero{background:var(--desk);padding:64px 0 88px;overflow:hidden}
+.hero .col{position:relative}
+.sheet{position:relative;background:var(--paper);max-width:860px;padding:44px 56px 48px;box-shadow:0 1px 0 var(--rule),0 22px 50px rgba(23,74,61,.16);transform-origin:top center}
+/* 접혔던 자국 */
+.sheet:before{content:"";position:absolute;inset:0;pointer-events:none;background:
+  linear-gradient(180deg,transparent 33.1%,rgba(23,74,61,.07) 33.3%,rgba(255,255,255,0) 34.4%,transparent 66.4%,rgba(23,74,61,.07) 66.6%,rgba(255,255,255,0) 67.7%)}
+.sheet .head{display:flex;justify-content:space-between;gap:16px;align-items:baseline;border-bottom:2px solid var(--green);padding-bottom:12px;font-size:15px;color:var(--muted)}
+.sheet .head b{color:var(--green);font-size:16px}
+.sheet h1{font-family:var(--serif);font-weight:900;color:var(--green);font-size:clamp(46px,7.4vw,96px);line-height:1.12;letter-spacing:-.04em;margin:34px 0 24px}
+.sheet p.sub{font-size:20px;color:#2c3d37;max-width:24em}
+.acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.seal{position:absolute;left:min(520px,58%);top:150px;width:118px;height:118px;border:4px solid var(--seal);border-radius:50%;color:var(--seal);display:grid;place-items:center;text-align:center;font-family:var(--serif);font-weight:900;font-size:22px;line-height:1.15;transform:rotate(-12deg);opacity:.86;mix-blend-mode:multiply;pointer-events:none}
+.seal:before{content:"";position:absolute;inset:6px;border:1.5px solid var(--seal);border-radius:50%}
+/* 클립으로 꽂은 증명사진 */
+.idcard{position:absolute;right:24px;top:44px;width:250px;background:var(--paper);padding:12px 12px 14px;box-shadow:0 18px 40px rgba(23,74,61,.22);transform:rotate(2.5deg)}
+.idcard img{width:100%;height:auto;aspect-ratio:600/619;object-fit:cover}
+.idcard figcaption{padding-top:10px;text-align:center}
+.idcard figcaption b{display:block;font-family:var(--serif);font-weight:900;font-size:24px;color:var(--ink);letter-spacing:.18em;padding-left:.18em}
+.idcard figcaption span{font-size:15px;color:var(--muted)}
+.clip{position:absolute;top:-26px;left:34px}
 @media (prefers-reduced-motion:no-preference){
-  .frame{animation:rise 1s cubic-bezier(.2,.7,.2,1) both .15s}
-  @keyframes rise{from{opacity:0;transform:translateY(28px) rotate(1.5deg)}to{opacity:1;transform:none}}
+  .sheet{animation:unfold .9s cubic-bezier(.2,.75,.2,1) both}
+  .seal{animation:stamp .35s cubic-bezier(.3,1.6,.5,1) both 1s}
+  .idcard{animation:drop .6s ease-out both .7s}
+  @keyframes unfold{from{transform:scaleY(.34);opacity:.3}to{transform:none;opacity:1}}
+  @keyframes stamp{from{transform:rotate(-12deg) scale(1.6);opacity:0}to{transform:rotate(-12deg) scale(1);opacity:.86}}
+  @keyframes drop{from{transform:rotate(2.5deg) translateY(-16px);opacity:0}to{transform:rotate(2.5deg);opacity:1}}
 }
 
-/* 자격 띠 */
-.creds{position:relative;margin-top:72px;border-top:1px solid rgba(201,164,87,.35)}
-.creds ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr)}
-.creds li{padding:26px 20px 30px;border-left:1px solid rgba(201,164,87,.25)}
-.creds li:first-child{border-left:0;padding-left:0}
-.creds b{display:block;font-size:20px;color:var(--gold2)}
-.creds span{font-size:15px;opacity:.75}
+/* 자격: 증권의 기재 사항처럼 */
+.fields{margin-top:30px;max-width:860px;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule)}
+.fields div{padding:16px 18px 2px 0}
+.fields dt{font-size:14px;color:var(--muted)}
+.fields dd{font-weight:700;font-size:18px;color:var(--green)}
 
-/* 도움 */
-.helps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
-.helps button{all:unset;box-sizing:border-box;cursor:pointer;background:var(--sage);border-radius:18px;padding:30px 28px 28px;position:relative;transition:background .2s,color .2s}
-.helps button:hover,.helps button:focus-visible{background:var(--pine);color:#fff}
-.helps button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-.helps .ic{width:56px;height:56px;border-radius:16px;background:#fff;display:grid;place-items:center;margin-bottom:20px}
-.helps h3{font-size:22px;font-weight:700;line-height:1.4}
-.helps p{font-size:16px;color:var(--soft);margin-top:6px}
-.helps button:hover p,.helps button:focus-visible p{color:rgba(255,255,255,.8)}
-.helps em{display:inline-block;margin-top:16px;font-style:normal;font-size:15px;font-weight:700;color:var(--pine2);border-bottom:2px solid var(--gold)}
-.helps button:hover em,.helps button:focus-visible em{color:var(--gold2)}
+/* 도와드릴 일: 체크 칸 */
+.helps{display:grid;grid-template-columns:1fr 1fr;column-gap:48px;margin-top:40px;border-top:2px solid var(--green)}
+.helps button{all:unset;box-sizing:border-box;cursor:pointer;display:grid;grid-template-columns:34px 1fr;column-gap:18px;padding:24px 8px 26px 4px;border-bottom:1px solid var(--rule)}
+.helps .box{width:28px;height:28px;border:2px solid var(--green);margin-top:5px;display:grid;place-items:center;background:var(--paper)}
+.helps .box svg{opacity:0;transition:opacity .15s}
+.helps h3{font-size:21px;font-weight:700;line-height:1.45}
+.helps p{grid-column:2;font-size:16.5px;color:var(--muted);margin-top:4px}
+.helps button:hover h3,.helps button:focus-visible h3{color:var(--green)}
+.helps button:hover .box svg,.helps button:focus-visible .box svg{opacity:1}
+.helps button:focus-visible{outline:3px solid var(--seal);outline-offset:-3px}
+.helps .go{grid-column:2;margin-top:8px;font-size:15px;font-weight:700;color:var(--green-2)}
 
 /* 사무실 사진 */
-.office{position:relative;min-height:560px;display:flex;align-items:flex-end;color:#fff;background:#20302c url(images/office.jpg) center 60%/cover;padding:0}
-.office:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(14,32,27,.92) 0%,rgba(14,32,27,.5) 45%,rgba(14,32,27,0) 75%)}
+.office{position:relative;min-height:560px;display:flex;align-items:flex-end;color:#fff;background:#1d2d28 url(images/office.jpg) center 60%/cover;padding:0}
+.office:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(14,38,31,.9) 0%,rgba(14,38,31,.45) 48%,rgba(14,38,31,0) 78%)}
 .office .col{position:relative;z-index:1;width:100%;padding-bottom:64px}
-.office h2{font-size:clamp(30px,4.4vw,50px);font-weight:900;line-height:1.25;letter-spacing:-.02em;max-width:16em}
-.office p{font-size:19px;opacity:.88;margin-top:14px;max-width:30em}
-.ways{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
-.ways span{border:1px solid rgba(255,255,255,.45);padding:8px 16px;border-radius:999px;font-size:16px;font-weight:500}
+.office h2{font-family:var(--serif);font-weight:900;font-size:clamp(28px,4.2vw,46px);line-height:1.32;letter-spacing:-.02em;max-width:16em}
+.office p{font-size:19px;opacity:.9;margin-top:14px;max-width:30em}
+.ways{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.ways span{border:1px solid rgba(255,255,255,.55);padding:7px 16px;border-radius:4px;font-size:16px;font-weight:600}
 
-/* 약속 */
-.promise{background:var(--night);color:#fff}
-.promise h2.sec{color:#fff}
-.promise .lede{color:rgba(255,255,255,.75)}
-.promise ul{list-style:none;margin-top:46px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.promise li{border:1px solid rgba(201,164,87,.35);border-radius:18px;padding:28px 26px;background:rgba(255,255,255,.03)}
-.promise li svg{margin-bottom:16px}
-.promise b{display:block;font-size:21px;line-height:1.4}
-.promise span{display:block;opacity:.75;font-size:16px;margin-top:8px}
+/* 약속: 약관 조항 */
+.promise{background:var(--desk)}
+.promise ol{list-style:none;counter-reset:jo;margin-top:44px;display:grid;grid-template-columns:1fr 1fr;column-gap:56px}
+.promise li{counter-increment:jo;display:grid;grid-template-columns:76px 1fr;column-gap:10px;padding:24px 0 26px;border-top:1px solid var(--rule)}
+.promise li:before{content:"제" counter(jo) "조";font-family:var(--serif);font-weight:900;color:var(--seal);font-size:19px;line-height:1.6}
+.promise b{display:block;font-size:20px;line-height:1.5}
+.promise span{display:block;color:var(--muted);font-size:16.5px;margin-top:6px}
 
 /* 소개 */
-.story .col{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:center}
-.wall{position:relative;border-radius:14px;overflow:hidden;box-shadow:0 24px 50px rgba(20,32,28,.22)}
+.story .col{display:grid;grid-template-columns:.78fr 1.22fr;gap:72px;align-items:center}
+.wall{position:relative;background:var(--paper);padding:12px;box-shadow:0 18px 40px rgba(23,74,61,.18)}
 .wall img{width:100%;height:auto;aspect-ratio:400/560;object-fit:cover;object-position:top}
-.wall figcaption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(0deg,rgba(14,32,27,.9),rgba(14,32,27,0));color:#fff;font-size:15px;padding:40px 18px 16px}
+.wall figcaption{font-size:15px;color:var(--muted);padding-top:10px;text-align:center}
 .story .say p{font-size:19px;margin-top:18px}
-.quote{margin-top:30px;padding:22px 26px;border-left:4px solid var(--gold);background:var(--sage);border-radius:0 14px 14px 0}
-.quote q{quotes:none;display:block;font-family:'Gowun Batang',serif;font-size:26px;color:var(--pine);line-height:1.45}
-.quote span{display:block;font-size:15px;color:var(--soft);margin-top:6px}
+.quote{margin-top:34px;padding-top:20px;border-top:2px solid var(--green)}
+.quote q{quotes:none;display:block;font-family:var(--serif);font-weight:900;font-size:28px;color:var(--green);line-height:1.45}
+.quote span{display:block;font-size:16px;color:var(--muted);margin-top:6px}
 
 /* 순서 */
-.flow{background:var(--sage)}
-.flow ol{list-style:none;counter-reset:s;margin-top:46px;display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
-.flow ol:before{content:"";position:absolute;left:28px;right:28px;top:27px;height:2px;background:repeating-linear-gradient(90deg,var(--gold) 0 10px,transparent 10px 18px)}
-.flow li{counter-increment:s;position:relative;padding-right:22px}
-.flow li:before{content:counter(s);position:relative;z-index:1;display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:var(--pine);color:var(--gold2);font-size:22px;font-weight:900;margin-bottom:18px;box-shadow:0 0 0 6px var(--sage)}
+.flow ol{list-style:none;counter-reset:s;margin-top:46px;display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--green)}
+.flow li{counter-increment:s;padding:22px 24px 0 0}
+.flow li:before{content:counter(s);display:block;font-family:var(--serif);font-weight:900;font-size:44px;line-height:1;color:var(--green);margin-bottom:14px}
 .flow h3{font-size:21px;font-weight:700}
-.flow p{font-size:16px;color:var(--soft);margin-top:6px}
+.flow p{font-size:16.5px;color:var(--muted);margin-top:6px}
 
 /* 질문 */
-.faq{max-width:860px;margin-top:40px}
-details{border-bottom:1px solid var(--line)}
+.faqsec{background:var(--desk)}
+.faq{max-width:860px;margin-top:38px;background:var(--paper);padding:6px 32px;box-shadow:0 1px 0 var(--rule)}
+details{border-bottom:1px solid var(--rule)}
+details:last-child{border-bottom:0}
 summary{list-style:none;cursor:pointer;padding:22px 44px 22px 0;font-size:20px;font-weight:700;position:relative}
 summary::-webkit-details-marker{display:none}
-summary:after{content:"";position:absolute;right:8px;top:30px;width:12px;height:12px;border-right:2.5px solid var(--pine2);border-bottom:2.5px solid var(--pine2);transform:rotate(45deg);transition:transform .2s}
-details[open] summary:after{transform:rotate(-135deg);top:36px}
-details p{padding:0 0 24px;color:#3b4a45;font-size:17px}
+summary:after{content:"";position:absolute;right:8px;top:31px;width:11px;height:11px;border-right:2.5px solid var(--green);border-bottom:2.5px solid var(--green);transform:rotate(45deg);transition:transform .2s}
+details[open] summary:after{transform:rotate(-135deg);top:37px}
+details p{padding:0 0 24px;color:#344640;font-size:17px}
 
-/* 신청 */
-.apply{background:var(--night);color:#fff;position:relative;overflow:hidden}
-.apply:before{content:"";position:absolute;left:-200px;bottom:-240px;width:560px;height:560px;border-radius:50%;border:1px solid rgba(201,164,87,.22);box-shadow:0 0 0 70px rgba(201,164,87,.03)}
-.apply .col{position:relative;display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
+/* 신청서 */
+.apply{background:var(--green);color:#fff}
+.apply .col{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start}
 .apply h2.sec{color:#fff}
-.apply .lede{color:rgba(255,255,255,.78)}
-.direct{margin-top:30px;border-top:1px solid rgba(201,164,87,.35);padding-top:22px}
-.direct span{display:block;font-size:15px;opacity:.7}
-.direct a{font-size:34px;font-weight:900;color:var(--gold2);text-decoration:none;letter-spacing:-.01em}
-form{display:grid;grid-template-columns:1fr 1fr;gap:16px;background:#fff;color:var(--ink);border-radius:20px;padding:32px;box-shadow:0 30px 60px rgba(0,0,0,.35)}
-form label{display:block;font-weight:700;font-size:15px;margin-bottom:6px}
-input[type=text],input[type=tel],select,textarea{width:100%;font:inherit;font-size:17px;padding:13px 14px;border:1.5px solid #b8c7c0;border-radius:10px;background:#fff;color:var(--ink)}
+.apply .lede{color:rgba(255,255,255,.82)}
+.direct{margin-top:32px;border-top:1px solid rgba(255,255,255,.3);padding-top:20px}
+.direct span{display:block;font-size:15px;opacity:.75}
+.direct a{font-family:var(--serif);font-size:36px;font-weight:900;color:#fff;text-decoration:none;letter-spacing:-.01em}
+form{display:grid;grid-template-columns:1fr 1fr;gap:20px 24px;background:var(--paper);color:var(--ink);padding:34px 36px 30px;box-shadow:0 24px 50px rgba(0,0,0,.28)}
+form .formhead{grid-column:1/-1;display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--green);padding-bottom:10px;margin-bottom:4px}
+form .formhead b{font-family:var(--serif);font-weight:900;font-size:22px;color:var(--green)}
+form .formhead span{font-size:14px;color:var(--muted)}
+form label{display:block;font-weight:700;font-size:15px;color:var(--muted);margin-bottom:2px}
+input[type=text],input[type=tel],select,textarea{width:100%;font:inherit;font-size:18px;padding:10px 2px;border:0;border-bottom:1.5px solid #9fb2aa;border-radius:0;background:transparent;color:var(--ink)}
+input[type=text]:focus,input[type=tel]:focus,select:focus,textarea:focus{outline:0;border-bottom:2.5px solid var(--green)}
+textarea{border:1.5px solid #9fb2aa;padding:10px 12px}
 .full{grid-column:1/-1}
-.agree{font-size:14px;line-height:1.6;color:var(--soft);background:var(--sage);border-radius:10px;padding:14px}
-.agree-row{display:flex;gap:10px;align-items:center;font-weight:500;font-size:16px;margin:0}
-.agree-row input{width:22px;height:22px;flex:none;accent-color:var(--pine)}
-form .btn{width:100%;justify-content:center;background:var(--pine);border-color:var(--pine);color:#fff}
-form .btn:hover{background:var(--night);border-color:var(--night)}
-.msg{min-height:26px;font-weight:700;color:var(--pine)}
+.agree{font-size:14px;line-height:1.65;color:var(--muted);background:var(--desk);padding:14px 16px}
+.agree-row{display:flex;gap:10px;align-items:center;font-weight:600;font-size:16px;margin:0;color:var(--ink)}
+.agree-row input{width:22px;height:22px;flex:none;accent-color:var(--green)}
+form .btn{width:100%;justify-content:center}
+.msg{min-height:26px;font-weight:700;color:var(--green)}
 
 /* 안내 */
-footer{background:#0e221d;color:rgba(255,255,255,.75);font-size:14px;line-height:1.7;padding:46px 0 110px}
-footer .who{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;padding-bottom:22px;border-bottom:1px solid rgba(255,255,255,.12)}
-footer .who b{color:#fff;font-size:17px;font-family:'Gowun Batang',serif}
+footer{background:#0f2f27;color:rgba(255,255,255,.76);font-size:14px;line-height:1.75;padding:46px 0 110px}
+footer .who{padding-bottom:22px;border-bottom:1px solid rgba(255,255,255,.14)}
+footer .who b{color:#fff;font-size:18px;font-family:var(--serif);font-weight:900}
 footer .who p{margin-top:4px}
-footer .notes{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+footer .notes{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.14)}
 footer h4{color:#fff;font-size:14px;margin-bottom:6px}
 footer .notes p{margin-top:6px}
-footer .seal{padding-top:18px}
+footer .sealnote{padding-top:18px}
 .hold{color:#ffd59a}
 
 .callbar{display:none}
-@media (max-width:900px){
+@media (max-width:980px){
+  .idcard{position:relative;right:auto;top:auto;width:210px;margin:0 0 -40px auto;transform:rotate(2.5deg);z-index:2}
+  .hero{padding-top:56px}
+  .seal{left:auto;right:28px;top:auto;bottom:150px;width:96px;height:96px;font-size:18px}
+}
+@media (max-width:760px){
   .top nav{display:none}
-  section{padding:64px 0}
-  .hero{padding-top:44px}
-  .hero .col,.story .col,.apply .col{grid-template-columns:1fr;gap:40px}
-  .frame{width:min(82%,320px)}
-  .creds{margin-top:48px}
-  .creds ul{grid-template-columns:1fr 1fr}
-  .creds li{padding:18px 14px 20px;border-left:0;border-top:1px solid rgba(201,164,87,.2)}
-  .creds li:first-child{padding-left:14px}
-  .creds li:nth-child(odd){padding-left:0}
-  .helps,.promise ul{grid-template-columns:1fr}
-  .office{min-height:520px}
-  .flow ol{grid-template-columns:1fr;gap:26px}
-  .flow ol:before{left:27px;right:auto;top:28px;bottom:28px;width:2px;height:auto;background:repeating-linear-gradient(180deg,var(--gold) 0 10px,transparent 10px 18px)}
-  .flow li{display:grid;grid-template-columns:56px 1fr;column-gap:18px;padding:0}
-  .flow li:before{grid-row:1/3;margin:0}
-  .wall{max-width:380px}
-  form{grid-template-columns:1fr;padding:22px}
+  section{padding:68px 0}
+  .hero{padding:44px 0 60px}
+  .sheet{padding:30px 22px 32px}
+  .sheet .head{flex-direction:column;gap:2px}
+  .idcard{width:170px;margin-bottom:-34px}
+  .seal{right:14px;bottom:auto;top:150px;width:84px;height:84px;font-size:16px}
+  .fields{grid-template-columns:1fr 1fr}
+  .helps{grid-template-columns:1fr}
+  .office{min-height:500px}
+  .promise ol{grid-template-columns:1fr}
+  .story .col,.apply .col{grid-template-columns:1fr;gap:40px}
+  .wall{max-width:340px}
+  .flow ol{grid-template-columns:1fr 1fr;row-gap:28px}
+  .faq{padding:4px 20px}
+  form{grid-template-columns:1fr;padding:26px 20px}
   footer .notes{grid-template-columns:1fr}
-  .callbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:40;box-shadow:0 -4px 16px rgba(0,0,0,.25)}
-  .callbar a{padding:17px 8px;text-align:center;font-weight:700;text-decoration:none;background:var(--night);color:#fff}
-  .callbar a+a{background:var(--gold);color:var(--night)}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:40;box-shadow:0 -4px 16px rgba(0,0,0,.22)}
+  .callbar a{padding:17px 8px;text-align:center;font-weight:700;text-decoration:none;background:var(--paper);color:var(--green);border-top:2px solid var(--green)}
+  .callbar a+a{background:var(--green);color:#fff}
 }
 </style>
 </head>
@@ -198,7 +222,7 @@ footer .seal{padding-top:18px}
 
 <header class="top"><div class="col">
   <a class="brand" href="#top" aria-label="보험명의 정닥터 처음으로">
-    <svg width="28" height="34" viewBox="0 0 30 36" aria-hidden="true"><path d="M15 2C9 11 3 17 3 23a12 12 0 0 0 24 0c0-6-6-12-12-21z" fill="none" stroke="#e6cf94" stroke-width="2.6"/><circle cx="15" cy="23" r="5" fill="none" stroke="#e6cf94" stroke-width="2.6"/></svg>
+    <svg width="26" height="30" viewBox="0 0 26 30" aria-hidden="true"><path d="M3 2h14l6 6v20H3z" fill="none" stroke="#174a3d" stroke-width="2.4" stroke-linejoin="round"/><path d="M17 2v6h6" fill="none" stroke="#174a3d" stroke-width="2.4" stroke-linejoin="round"/><circle cx="13" cy="18" r="4.2" fill="none" stroke="#c23a2b" stroke-width="2.2"/></svg>
     <b>보험명의 정닥터</b>
   </a>
   <nav aria-label="바로가기"><a href="#help">상담 내용</a><a href="#promise">약속</a><a href="#story">소개</a><a href="#faq">자주 묻는 질문</a></nav>
@@ -206,31 +230,29 @@ footer .seal{padding-top:18px}
 </div></header>
 
 <main id="top">
-<section class="hero" style="padding-bottom:0">
+<section class="hero">
   <div class="col">
-    <div>
-      <span class="tag">보험명의 정닥터 허진성 지점장</span>
+    <figure class="idcard">
+      <svg class="clip" width="34" height="70" viewBox="0 0 34 70" aria-hidden="true"><path d="M10 50V12a7 7 0 0 1 14 0v44a10 10 0 0 1-20 0V20" fill="none" stroke="#8e9b96" stroke-width="3" stroke-linecap="round"/></svg>
+      <img src="images/portrait.jpg" alt="허진성 지점장 증명사진" width="600" height="619">
+      <figcaption><b>허진성</b><span>보험명의 정닥터 지점장</span></figcaption>
+    </figure>
+    <div class="sheet">
+      <div class="head"><b>보험 점검 상담 안내</b><span>보험명의 정닥터 허진성 지점장</span></div>
       <h1>보험,<br>펼쳐 보면<br>보입니다.</h1>
       <p class="sub">들어 놓고도 무엇이 되는지 모르는 보험, 그냥 두지 마십시오. 가지고 계신 증권부터 함께 펼쳐 보고 쉬운 말로 설명드립니다.</p>
       <div class="acts">
-        <a class="btn" href="#apply"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>상담 신청하기</a>
+        <a class="btn" href="#apply"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h10l4 4v14H5z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M9 12h6M9 16h4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>상담 신청하기</a>
         <a class="btn line js-tel" href="tel:01063662889"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>010-6366-2889</a>
       </div>
+      <div class="seal" aria-hidden="true">보험<br>명의</div>
+      <dl class="fields" aria-label="자격">
+        <div><dt>생명보험</dt><dd>모집 자격</dd></div>
+        <div><dt>손해보험</dt><dd>모집 자격</dd></div>
+        <div><dt>변액보험</dt><dd>판매 자격</dd></div>
+        <div><dt>개업공인중개사</dt><dd>부동산 상담도</dd></div>
+      </dl>
     </div>
-    <figure class="frame">
-      <div class="inner">
-        <img src="images/portrait.jpg" alt="허진성 지점장 증명사진" width="600" height="619">
-        <figcaption class="plate"><b>허진성</b><span>보험명의 정닥터 지점장</span></figcaption>
-      </div>
-    </figure>
-  </div>
-  <div class="col creds" aria-label="자격">
-    <ul>
-      <li><b>생명보험</b><span>모집 자격</span></li>
-      <li><b>손해보험</b><span>모집 자격</span></li>
-      <li><b>변액보험</b><span>판매 자격</span></li>
-      <li><b>개업공인중개사</b><span>부동산 상담도 함께</span></li>
-    </ul>
   </div>
 </section>
 
@@ -238,12 +260,12 @@ footer .seal{padding-top:18px}
   <h2 class="sec">무엇을 도와드릴까요?</h2>
   <p class="lede">이런 일로 많이 찾아오십니다. 해당하는 칸을 누르면 상담 신청서에 바로 담깁니다.</p>
   <div class="helps">
-    <button type="button" data-help="가입한 보험 점검"><span class="ic"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2" fill="none" stroke="#2e5a4e" stroke-width="2"/><path d="M9 8h6M9 12h6M9 16h3" stroke="#c9a457" stroke-width="2" stroke-linecap="round"/></svg></span><h3>내 보험, 제대로 알고 싶다</h3><p>여러 개 들어 놨는데 무엇이 어떻게 보장되는지 모르실 때. 증권을 한 장씩 같이 봅니다.</p><em>보험 점검 상담</em></button>
-    <button type="button" data-help="보험금 청구 문의"><span class="ic"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M4 12h16" stroke="#2e5a4e" stroke-width="2.4" stroke-linecap="round"/><circle cx="12" cy="12" r="9.5" fill="none" stroke="#c9a457" stroke-width="2"/></svg></span><h3>병원비, 청구가 되는지</h3><p>치료를 받으셨는데 청구할 수 있는지, 어떤 서류가 필요한지 모르실 때.</p><em>청구 문의</em></button>
-    <button type="button" data-help="보험료 부담"><span class="ic"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16v12H4z" fill="none" stroke="#2e5a4e" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="13" r="2.6" fill="none" stroke="#c9a457" stroke-width="2"/><path d="M7 4h10" stroke="#2e5a4e" stroke-width="2" stroke-linecap="round"/></svg></span><h3>보험료가 버겁다</h3><p>매달 나가는 돈이 부담될 때. 해지부터 하지 마시고 먼저 연락 주십시오.</p><em>보험료 상담</em></button>
-    <button type="button" data-help="가족 보험 정리"><span class="ic"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3" fill="none" stroke="#2e5a4e" stroke-width="2"/><circle cx="16.5" cy="9.5" r="2.5" fill="none" stroke="#c9a457" stroke-width="2"/><path d="M2.5 20a5.5 5.5 0 0 1 11 0M13 20a4 4 0 0 1 8 0" fill="none" stroke="#2e5a4e" stroke-width="2" stroke-linecap="round"/></svg></span><h3>가족 보험을 한 번에</h3><p>부모님, 배우자, 자녀 보험이 제각각일 때 한눈에 정리해 드립니다.</p><em>가족 보험 상담</em></button>
-    <button type="button" data-help="노후 준비"><span class="ic"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V11" stroke="#2e5a4e" stroke-width="2.2" stroke-linecap="round"/><path d="M12 11c0-4 3-7 7-7 0 4-3 7-7 7zM12 14c0-3-2.5-5.5-6-5.5 0 3 2.5 5.5 6 5.5z" fill="none" stroke="#c9a457" stroke-width="2" stroke-linejoin="round"/></svg></span><h3>은퇴 뒤가 걱정된다</h3><p>나이 들어 필요한 보장과 노후 준비를 지금 상황에 맞춰 살펴봅니다.</p><em>노후 준비 상담</em></button>
-    <button type="button" data-help="사업장·자영업자 보험"><span class="ic"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l2-5h14l2 5M4 9v11h16V9" fill="none" stroke="#2e5a4e" stroke-width="2" stroke-linejoin="round"/><path d="M3 9h18M10 20v-5h4v5" fill="none" stroke="#c9a457" stroke-width="2" stroke-linejoin="round"/></svg></span><h3>가게를 하고 있다</h3><p>사업장 화재, 배상책임처럼 자영업자에게 필요한 보장을 함께 봅니다.</p><em>사업장 보험 상담</em></button>
+    <button type="button" data-help="가입한 보험 점검"><span class="box"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6" fill="none" stroke="#c23a2b" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>내 보험, 제대로 알고 싶다</h3><p>여러 개 들어 놨는데 무엇이 어떻게 보장되는지 모르실 때. 증권을 한 장씩 같이 봅니다.</p><span class="go">보험 점검 상담</span></button>
+    <button type="button" data-help="보험금 청구 문의"><span class="box"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6" fill="none" stroke="#c23a2b" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>병원비, 청구가 되는지</h3><p>치료를 받으셨는데 청구할 수 있는지, 어떤 서류가 필요한지 모르실 때.</p><span class="go">청구 문의</span></button>
+    <button type="button" data-help="보험료 부담"><span class="box"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6" fill="none" stroke="#c23a2b" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>보험료가 버겁다</h3><p>매달 나가는 돈이 부담될 때. 해지부터 하지 마시고 먼저 연락 주십시오.</p><span class="go">보험료 상담</span></button>
+    <button type="button" data-help="가족 보험 정리"><span class="box"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6" fill="none" stroke="#c23a2b" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>가족 보험을 한 번에</h3><p>부모님, 배우자, 자녀 보험이 제각각일 때 한눈에 정리해 드립니다.</p><span class="go">가족 보험 상담</span></button>
+    <button type="button" data-help="노후 준비"><span class="box"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6" fill="none" stroke="#c23a2b" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>은퇴 뒤가 걱정된다</h3><p>나이 들어 필요한 보장과 노후 준비를 지금 상황에 맞춰 살펴봅니다.</p><span class="go">노후 준비 상담</span></button>
+    <button type="button" data-help="사업장·자영업자 보험"><span class="box"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6" fill="none" stroke="#c23a2b" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>가게를 하고 있다</h3><p>사업장 화재, 배상책임처럼 자영업자에게 필요한 보장을 함께 봅니다.</p><span class="go">사업장 보험 상담</span></button>
   </div>
 </div></section>
 
@@ -256,14 +278,14 @@ footer .seal{padding-top:18px}
 <section id="promise" class="promise"><div class="col">
   <h2 class="sec">상담할 때 지키는 약속</h2>
   <p class="lede">보험은 오래 가는 약속입니다. 처음 만나는 자리부터 이렇게 하겠습니다.</p>
-  <ul>
-    <li><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="#e6cf94" stroke-width="2"/><path d="M16 16l5 5" stroke="#e6cf94" stroke-width="2.2" stroke-linecap="round"/></svg><b>지금 있는 보험부터 봅니다</b><span>새 상품 이야기는 그다음입니다. 필요 없으면 권하지 않습니다.</span></li>
-    <li><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z" fill="none" stroke="#e6cf94" stroke-width="2" stroke-linejoin="round"/></svg><b>해지부터 권하지 않습니다</b><span>기존 보험을 깨고 새로 들면 손해가 날 수 있어, 장단점을 먼저 말씀드립니다.</span></li>
-    <li><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M12 4v16" stroke="#e6cf94" stroke-width="2" stroke-linecap="round"/><path d="M6 6l12 12" stroke="#e6cf94" stroke-width="2" stroke-linecap="round" opacity=".45"/></svg><b>좋은 점과 함께 안 되는 점도</b><span>보장하지 않는 경우, 보험금이 줄어드는 기간까지 같이 설명드립니다.</span></li>
-    <li><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4.5 4.5L19 7" fill="none" stroke="#e6cf94" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><b>결정은 고객께서 하십니다</b><span>상담만 받고 끝내셔도 괜찮습니다. 재촉하지 않습니다.</span></li>
-    <li><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z" fill="none" stroke="#e6cf94" stroke-width="2" stroke-linejoin="round"/></svg><b>가입한 뒤에도 연락이 됩니다</b><span>청구, 변경, 주소 이전처럼 귀찮은 일이 생기면 전화 한 통이면 됩니다.</span></li>
-    <li><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2" fill="none" stroke="#e6cf94" stroke-width="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="#e6cf94" stroke-width="2"/></svg><b>개인정보는 상담에만 씁니다</b><span>남겨 주신 연락처는 상담 외에 쓰지 않고 기간이 지나면 파기합니다.</span></li>
-  </ul>
+  <ol>
+    <li><div><b>지금 있는 보험부터 봅니다</b><span>새 상품 이야기는 그다음입니다. 필요 없으면 권하지 않습니다.</span></div></li>
+    <li><div><b>해지부터 권하지 않습니다</b><span>기존 보험을 깨고 새로 들면 손해가 날 수 있어, 장단점을 먼저 말씀드립니다.</span></div></li>
+    <li><div><b>좋은 점과 함께 안 되는 점도</b><span>보장하지 않는 경우, 보험금이 줄어드는 기간까지 같이 설명드립니다.</span></div></li>
+    <li><div><b>결정은 고객께서 하십니다</b><span>상담만 받고 끝내셔도 괜찮습니다. 재촉하지 않습니다.</span></div></li>
+    <li><div><b>가입한 뒤에도 연락이 됩니다</b><span>청구, 변경, 주소 이전처럼 귀찮은 일이 생기면 전화 한 통이면 됩니다.</span></div></li>
+    <li><div><b>개인정보는 상담에만 씁니다</b><span>남겨 주신 연락처는 상담 외에 쓰지 않고 기간이 지나면 파기합니다.</span></div></li>
+  </ol>
 </div></section>
 
 <section id="story" class="story"><div class="col">
@@ -289,7 +311,7 @@ footer .seal{padding-top:18px}
   </ol>
 </div></section>
 
-<section id="faq"><div class="col">
+<section id="faq" class="faqsec"><div class="col">
   <h2 class="sec">자주 묻는 질문</h2>
   <div class="faq">
     <details open><summary>상담을 받으면 꼭 가입해야 하나요?</summary><p>아닙니다. 가지고 계신 보험을 점검만 받고 끝내셔도 됩니다. 필요한 게 없으면 없다고 말씀드립니다.</p></details>
@@ -307,6 +329,7 @@ footer .seal{padding-top:18px}
     <div class="direct"><span>바로 통화하시려면</span><a class="js-tel" href="tel:01063662889">010-6366-2889</a></div>
   </div>
   <form id="form" novalidate>
+    <div class="formhead"><b>상담 신청서</b><span>보험명의 정닥터</span></div>
     <div><label for="f-name">성함</label><input id="f-name" type="text" autocomplete="name" required></div>
     <div><label for="f-tel">연락처</label><input id="f-tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="010-0000-0000" required></div>
     <div><label for="f-type">상담 내용</label>
@@ -325,12 +348,10 @@ footer .seal{padding-top:18px}
 
 <footer><div class="col">
   <div class="who">
-    <div>
-      <b>보험명의 정닥터</b>
-      <p class="hold">소속 보험대리점명과 대리점 등록번호: 본사 확인 후 기재</p>
-      <p>허진성 지점장 · 010-6366-2889 · <span class="hold">협회등록번호: 본사 확인 후 기재</span></p>
-      <p>서울시 구로구 디지털로34길 55, 코오롱싸이언스밸리 2차 303호 · 사무실 02-837-8676</p>
-    </div>
+    <b>보험명의 정닥터</b>
+    <p class="hold">소속 보험대리점명과 대리점 등록번호: 본사 확인 후 기재</p>
+    <p>허진성 지점장 · 010-6366-2889 · <span class="hold">협회등록번호: 본사 확인 후 기재</span></p>
+    <p>서울시 구로구 디지털로34길 55, 코오롱싸이언스밸리 2차 303호 · 사무실 02-837-8676</p>
   </div>
   <div class="notes">
     <div>
@@ -345,7 +366,7 @@ footer .seal{padding-top:18px}
       <p>2. 가입 상품에 따라 새로운 면책기간 적용 및 보장 제한 등 기타 불이익이 발생할 수 있습니다.</p>
     </div>
   </div>
-  <p class="seal hold">본 광고는 광고심의기준을 준수하였으며 유효기간은 ____ ~ ____입니다. 심의필 제______호 (본사 승인 후 기재)</p>
+  <p class="sealnote hold">본 광고는 광고심의기준을 준수하였으며 유효기간은 ____ ~ ____입니다. 심의필 제______호 (본사 승인 후 기재)</p>
 </div></footer>
 
 <div class="callbar"><a class="js-tel" href="tel:01063662889">전화 문의</a><a href="#apply">상담 신청</a></div>
